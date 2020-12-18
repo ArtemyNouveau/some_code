@@ -1,8 +1,10 @@
   const id = "1686336917989055225"
   console.log(id)
+  window.onload = function(){
   videojs.getPlayer(id).ready(function() {
     const myPlayer = this;
     myPlayer.on('loadstart',function(){
       console.log('mediainfo', myPlayer.mediainfo);
     })
   });
+  }
