@@ -1,6 +1,7 @@
   const id = "vjs_video_3"
+  console.log(id)
   videojs.getPlayer(id).ready(function() {
-    var myPlayer = this;
+    const myPlayer = this;
     myPlayer.on('loadstart',function(){
       console.log('mediainfo', myPlayer.mediainfo);
     })
