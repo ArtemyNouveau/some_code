@@ -1,4 +1,4 @@
-  const id = "vjs_video_3"
+  const id = "myPlayerID"
   console.log(id)
   videojs.getPlayer(id).ready(function() {
     const myPlayer = this;
